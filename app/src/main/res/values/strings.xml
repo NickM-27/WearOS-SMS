@@ -1,0 +1,108 @@
+<resources>
+
+    <string-array name="app_versions">
+        <item>1.0</item>
+        <item>1.1</item>
+        <item>2.0</item>
+        <item>2.0.1</item>
+        <item>2.1</item>
+        <item>2.2</item>
+        <item>3.0</item>
+        <item>3.1</item>
+        <item>3.2</item>
+    </string-array>
+    <string-array name="app_changes">
+        <item>• Initial Release</item>
+        <item>• Group sending now works\n• MMS messages now show properly</item>
+        <item>• Added SMS notifications option\n• Updated to Android P\n• Updated design to Material Design 2.0</item>
+        <item>• Fixed connection issue</item>
+        <item>• Only watch shows SMS notification now\n• Updated to Material Design 2.0 Icons\n• Greatly reduced app size</item>
+        <item>• Performance improvements\n• Bug fixes</item>
+        <item>• Added custom replies to the app and watch\n• Revamped Wear OS SMS notification\n• Bug Fixes</item>
+        <item>• Added ability to change conversation colors from phone app\n• Bug Fixes</item>
+        <item>• Watch app handles premium independently\n• Fixed order of messages on phone app\n• Bug Fixes</item>
+    </string-array>
+
+    <string name="app_name">WearOS SMS</string>
+    <string name="option_theme">App Theme</string>
+    <string name="explanation_location_permission">The location permission allows for the automatic theme mode to more accurately calculate sunset and sunrise times so that the app can change from light to dark and dark to light more precisely.</string>
+    <string name="settings_title">Settings</string>
+    <string name="content_description">Content Description</string>
+    <string name="action_undo">UNDO</string>
+    <string name="state_not_set">Not Set</string>
+    <string name="action_contact_developer">Contact Developer</string>
+    <string name="option_avatar">Avatar Image</string>
+    <string name="action_select">SELECT</string>
+    <string name="default_theme">Automatic Mode</string>
+    <string name="preferences_general">General Preferences</string>
+    <string name="option_app_color">App Color</string>
+    <string name="action_color_advanced">Advanced Color Picker</string>
+    <string name="title_option_avatar">Set Avatar</string>
+    <string name="error_inbox_permissions">Enable PermissionITEM_SEP1234567890ITEM_SEPPhone needs permission to read messagesITEM_SEPaaaaaaITEM_SEP5ITEM_SEPfalse</string>
+    <string name="error_convo_permissions">Enable PermissionITEM_SEPPhone needs permission to read messagesITEM_SEPITEM_SEPITEM_SEP</string>
+    <string name="warning_no_messages">The app cannot function without these permissions</string>
+    <string name="explanation_premium">The WearOS SMS app is free, but to truly take advantage of it and do things like send messages, create replies, or theme the app, premium mode must be purchased.</string>
+    <string name="action_purchase_premium">Purchase Premium</string>
+    <string name="explanation_premium_bought">Thank you for purchasing premium! More features are on the way so your purchase will only become more valuable! Hope you enjoy the app and let me know if you have any issues!</string>
+    <string name="option_theme_summary">Local app theme to make the app more comfortable to use.</string>
+    <string name="option_app_color_summary">Global theme color that applies to the WearOS app as well.</string>
+    <string name="action_settings">Settings</string>
+    <string name="preferences_watch">Watch Preferences</string>
+    <string name="option_conversation_count">Messages Sent To Watch</string>
+    <string name="action_issues">Having Issues With Syncing?</string>
+    <string name="title_issues">Visible Messages</string>
+    <string name="explanation_issues">These are the conversations that the app can see and tries to send to the watch, useful for debugging. You can open them to debug individual conversations.</string>
+    <string name="channel_sms">SMS Channel</string>
+    <string name="channel_sms_desc">Received SMS Messages</string>
+    <string name="option_notify">SMS Notifications</string>
+    <string name="explanation_new_reply">No replies found! Create a reply using the + button. Replies can be used on the watch to quickly and efficiently send messages.</string>
+    <string name="title_new_reply">New Reply</string>
+    <string name="title_edit_reply">Edit Reply</string>
+    <string name="action_dialog_save">SAVE</string>
+    <string name="action_cancel">@android:string/cancel</string>
+    <string name="contact_replies">%d replies</string>
+    <string name="confirm_delete_reply">Delete Reply?</string>
+    <string name="action_delete">Delete</string>
+
+    <string-array name="theme_options">
+        <item>Automatic Mode</item>
+        <item>Day Mode</item>
+        <item>Night Mode</item>
+        <item>True Dark Mode</item>
+    </string-array>
+    <string-array name="default_colors">
+        <item>#311B92</item>
+        <item>#2196F3</item>
+        <item>#9C27B0</item>
+        <item>#F44336</item>
+        <item>#67bb43</item>
+        <item>#F44336</item>
+        <item>#FFEB3B</item>
+        <item>#64a582</item>
+        <item>#290866</item>
+        <item>#00BCD4</item>
+        <item>#660833</item>
+        <item>#085b66</item>
+        <item>#67bb43</item>
+        <item>#009688</item>
+        <item>#827716</item>
+        <item>#a4b0b2</item>
+        <item>#434d4f</item>
+        <item>#9365a5</item>
+        <item>#649ba5</item>
+        <item>#f900ae</item>
+        <item>#FFC107</item>
+        <item>#59c7ff</item>
+        <item>#a56496</item>
+        <item>#02517a</item>
+        <item>#a4c68b</item>
+        <item>#FFD600</item>
+        <item>#F44336</item>
+    </string-array>
+    <string-array name="count_options">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+</resources>

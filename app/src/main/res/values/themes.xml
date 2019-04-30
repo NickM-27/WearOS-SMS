@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:toolbarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+        <item name="android:textColorTertiary">@color/colorTertiaryText</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryTextInverse</item>
+        <item name="android:textColorSecondaryInverse">@color/colorSecondaryTextInverse</item>
+        <item name="android:textColorTertiaryInverse">@color/colorTertiaryTextInverse</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorTertiaryText</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorPrimaryLight</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar.Colored</item>
+    </style>
+
+    <style name="Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:toolbarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+        <item name="android:textColorTertiary">@color/colorTertiaryText</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryTextInverse</item>
+        <item name="android:textColorSecondaryInverse">@color/colorSecondaryTextInverse</item>
+        <item name="android:textColorTertiaryInverse">@color/colorTertiaryTextInverse</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorTertiaryText</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/colorPrimaryLight</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+        <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar.Colored</item>
+    </style>
+
+</resources>

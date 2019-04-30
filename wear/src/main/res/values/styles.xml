@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryTextInverse</item>
+        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+        <item name="android:textColorTertiary">@color/colorTertiaryText</item>
+        <item name="android:textColorPrimaryInverse">@color/colorPrimaryTextInverse</item>
+        <item name="android:textColorSecondaryInverse">@color/colorSecondaryTextInverse</item>
+        <item name="android:textColorTertiaryInverse">@color/colorTertiaryTextInverse</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorTertiaryText</item>
+    </style>
+
+    <style name="Messaging" parent="AppTheme">
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/no_transition</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+</resources>

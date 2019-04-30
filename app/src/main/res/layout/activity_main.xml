@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/nav_host_fragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="56dp"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/nav_main" />
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/toolbar"
+                style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:fabAlignmentMode="center" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="fabClick"
+                android:src="@drawable/ic_sms_notification"
+                app:fabSize="normal"
+                app:layout_anchor="@+id/toolbar" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <androidx.constraintlayout.widget.Placeholder
+            android:id="@+id/center"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/fab_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="replies_fab,sync_fab"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/replies_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="syncClick"
+            android:src="@drawable/ic_edit"
+            app:fabSize="mini"
+            app:layout_constraintCircle="@+id/center"
+            app:layout_constraintCircleAngle="300"
+            app:layout_constraintCircleRadius="100dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sync_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="repliesClick"
+            android:src="@drawable/ic_reply"
+            app:fabSize="mini"
+            app:layout_constraintCircle="@+id/center"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="100dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

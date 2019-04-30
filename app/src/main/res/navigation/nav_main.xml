@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nick.mowen.wearossms.fragment.MainFragment"
+        android:label="WearOS SMS"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_demoInboxFragment"
+            app:destination="@id/demoInboxFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/mainFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainFragment_to_repliesFragment"
+            app:destination="@id/repliesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/demoInboxFragment"
+        android:name="com.nick.mowen.wearossms.fragment.DemoInboxFragment"
+        android:label="Inbox"
+        tools:layout="@layout/fragment_demo_list">
+        <action
+            android:id="@+id/action_demoInboxFragment_to_demoConversationFragment"
+            app:destination="@id/demoConversationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/demoConversationFragment"
+        android:name="com.nick.mowen.wearossms.fragment.DemoConversationFragment"
+        android:label="Conversation"
+        tools:layout="@layout/fragment_demo_list">
+        <argument
+            android:name="threadId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.nick.mowen.wearossms.fragment.SettingsFragment"
+        android:label="Settings" />
+    <fragment
+        android:id="@+id/repliesFragment"
+        android:name="com.nick.mowen.wearossms.fragment.RepliesFragment"
+        android:label="Replies"
+        tools:layout="@layout/fragment_replies">
+        <action
+            android:id="@+id/action_repliesFragment_to_personRepliesFragment"
+            app:destination="@id/personRepliesFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/personRepliesFragment"
+        android:name="com.nick.mowen.wearossms.fragment.PersonRepliesFragment"
+        android:label="PersonRepliesFragment"
+        tools:layout="@layout/fragment_person_replies">
+        <argument
+            android:name="threadId"
+            app:argType="string" />
+    </fragment>
+</navigation>

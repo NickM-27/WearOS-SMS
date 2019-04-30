@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/preferences_general">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_color_palette_themed"
+            android:key="trueDark"
+            android:title="@string/option_true_dark" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preferences_conversation">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_list_themed"
+            android:key="divider"
+            android:title="@string/option_divider" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_group_themed"
+            android:key="groupAvatar"
+            android:title="@string/option_group_avatar" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_flip_to_front_themed"
+            android:key="contactColor"
+            android:title="@string/option_contact_color" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

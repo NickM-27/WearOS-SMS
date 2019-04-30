@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">WearOS SMS</string>
+    <string name="content_description">Content Description</string>
+    <string name="dummy_text">Dummy Text</string>
+    <string name="dummy_phone">8007777777</string>
+    <string name="dummy_name">Joe Smitch</string>
+    <string name="dummy_paragraph">This is a really long message about nothing but it is ironic because it serves a great purpose of helping me to know about something.</string>
+    <string name="title_inbox">Conversations</string>
+    <string name="action_send_message">Send Message</string>
+    <string name="action_mark_read">Mark Read</string>
+    <string name="dummy_message_title">You • 9:54 AM</string>
+    <string name="action_enter_message">Enter Message…</string>
+    <string name="status_message_sent">Message Sent</string>
+    <string name="action_call_contact">Call</string>
+    <string name="action_view_recipients">View Recipients</string>
+    <string name="preferences_conversation">Conversation Preferences</string>
+    <string name="option_list">Inbox List Style</string>
+    <string name="default_style">Card View</string>
+    <string name="option_divider">Conversation list dividers</string>
+    <string name="option_group_avatar">Use group avatars</string>
+    <string name="action_open_phone">Open On Phone</string>
+    <string name="title_incognito_hidden">Hidden Conversation</string>
+    <string name="action_view_mms">View MMS</string>
+    <string name="action_view_todo">To-Do List</string>
+    <string name="state_no_todo">No to-do items found</string>
+    <string name="preferences_general">App Preferences</string>
+    <string name="option_true_dark">True Dark Mode</string>
+    <string name="option_contact_color">Change app color for contact</string>
+    <string name="action_create_conversation">New Conversation</string>
+    <string name="action_refresh">Refresh Inbox</string>
+    <string name="warning_requires_premium">This requires premium, you can find that in the phone app! :D</string>
+    <string name="channel_sms">SMS Channel</string>
+    <string name="channel_sms_desc">Received SMS Messages</string>
+    <string name="action_reply">Reply</string>
+    <string name="you">You</string>
+
+    <string-array name="changes">
+        <item>• Can now view MMS on watch\n• Loading indicator when syncing messages with phone\n• Added new animations\n• Updated to new components\n• Fixed lots of bugs</item>
+        <item>• Added to-do list support\n• View Recipients only shows in group conversations\n</item>
+        <item>• Rewrote entire app</item>
+        <item>• Fixed crash when opening conversation too quickly\n• Added items to inbox drawer\n•Bug fixes</item>
+    </string-array>
+    <string-array name="list_options">
+        <item>Card View</item>
+        <item>Flat</item>
+    </string-array>
+</resources>
