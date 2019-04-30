@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_wear_capabilities">
+        <item>message_acceptable</item>
+        <item>conversation_acceptable</item>
+        <item>preferences_sync</item>
+    </string-array>
+</resources>

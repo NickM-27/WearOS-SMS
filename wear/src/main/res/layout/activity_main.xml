@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.drawer.WearableDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inbox_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:id="@+id/inbox_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <androidx.wear.widget.drawer.WearableNavigationDrawerView
+        android:id="@+id/inbox_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:navigation_style="single_page" />
+
+    <androidx.wear.widget.drawer.WearableActionDrawerView
+        android:id="@+id/inbox_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:pointerIcon="copy" />
+
+</androidx.wear.widget.drawer.WearableDrawerLayout>
+

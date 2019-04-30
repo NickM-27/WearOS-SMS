@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.drawer.WearableDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conversation_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:deviceIds="wear">
+
+    <androidx.wear.widget.WearableRecyclerView
+        android:id="@+id/conversation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/custom_row_message" />
+
+    <androidx.wear.widget.drawer.WearableActionDrawerView
+        android:id="@+id/conversation_action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:pointerIcon="copy" />
+
+</androidx.wear.widget.drawer.WearableDrawerLayout>

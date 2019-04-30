@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="android_wear_capabilities">
+        <item>message_retrieval</item>
+        <item>conversation_retrieval</item>
+        <item>conversation_opening</item>
+        <item>message_sending</item>
+        <item>call_making</item>
+        <item>todo_retrieval</item>
+        <item>mms_retrieval</item>
+    </string-array>
+</resources>

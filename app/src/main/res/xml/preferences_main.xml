@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.nick.mowen.wearossms.view.ColorPreferenceCategory
+        android:key="@string/preferences_general"
+        android:title="@string/preferences_general">
+
+        <com.nick.mowen.wearossms.view.ColorListPreference
+            android:defaultValue="@string/default_theme"
+            android:entries="@array/theme_options"
+            android:entryValues="@array/theme_options"
+            android:icon="@drawable/ic_color_palette_themed"
+            android:key="theme"
+            android:summary="@string/option_theme_summary"
+            android:title="@string/option_theme" />
+
+        <com.nick.mowen.wearossms.view.ColorPreference
+            android:defaultValue="-1"
+            android:icon="@drawable/ic_color_palette_themed"
+            android:key="primaryColor"
+            android:summary="@string/option_app_color_summary"
+            android:title="@string/option_app_color" />
+
+        <com.nick.mowen.wearossms.view.ColorSwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_sms_themed"
+            android:key="notify"
+            android:title="@string/option_notify" />
+
+        <!--<com.nick.mowen.wearossms.view.ColorPreference
+            android:defaultValue="-1"
+            android:icon="@drawable/ic_color_palette_themed"
+            android:key="accentColor"
+            android:title="@string/option_accent_color" />-->
+
+    </com.nick.mowen.wearossms.view.ColorPreferenceCategory>
+
+    <com.nick.mowen.wearossms.view.ColorPreferenceCategory android:title="@string/preferences_watch">
+
+        <com.nick.mowen.wearossms.view.ColorListPreference
+            android:defaultValue="30"
+            android:entries="@array/count_options"
+            android:entryValues="@array/count_options"
+            android:icon="@drawable/ic_list_numbered_themed"
+            android:key="conversationCount"
+            android:title="@string/option_conversation_count" />
+
+        <com.nick.mowen.wearossms.view.ColorPreference
+            android:defaultValue="@string/state_not_set"
+            android:icon="@drawable/ic_person_themed"
+            android:key="avatar"
+            android:title="@string/option_avatar" />
+
+    </com.nick.mowen.wearossms.view.ColorPreferenceCategory>
+
+</PreferenceScreen>

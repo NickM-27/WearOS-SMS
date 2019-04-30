@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@color/colorCardBack"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/row_profile"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/content_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/row_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/row_text"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintLeft_toRightOf="@+id/row_profile"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="300dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/row_profile"
+            app:layout_constraintTop_toBottomOf="@+id/row_name"
+            tools:text="@tools:sample/lorem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+

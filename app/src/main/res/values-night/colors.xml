@@ -1,0 +1,14 @@
+<resources>>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorPrimaryLight">#B2EBF2</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorSecondaryText">#B3FFFFFF</color>
+    <color name="colorTertiaryText">#80FFFFFF</color>
+    <color name="colorPrimaryTextInverse">#000000</color>
+    <color name="colorSecondaryTextInverse">#8C000000</color>
+    <color name="colorTertiaryTextInverse">#66000000</color>
+    <color name="colorBack">#303030</color>
+    <color name="drawableTint">@null</color>
+</resources>

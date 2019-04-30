@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_send_message"
+        android:icon="@drawable/ic_reply"
+        android:title="@string/action_send_message" />
+
+    <item
+        android:id="@+id/action_call_contact"
+        android:icon="@drawable/ic_call"
+        android:title="@string/action_call_contact" />
+
+    <item
+        android:id="@+id/action_view_recipients"
+        android:icon="@drawable/ic_group"
+        android:title="@string/action_view_recipients" />
+
+    <item
+        android:id="@+id/action_open_phone"
+        android:icon="@drawable/open_on_phone"
+        android:title="@string/action_open_phone" />
+
+</menu>

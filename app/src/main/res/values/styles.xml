@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="LightPopup" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="DarkPopup" parent="ThemeOverlay.MaterialComponents.Dark" />
+
+</resources>

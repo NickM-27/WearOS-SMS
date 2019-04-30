@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorPrimaryLight">#B2EBF2</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorSecondaryText">#B3FFFFFF</color>
+    <color name="colorTertiaryText">#80FFFFFF</color>
+    <color name="colorPrimaryTextInverse">#000000</color>
+    <color name="colorSecondaryTextInverse">#8C000000</color>
+    <color name="colorTertiaryTextInverse">#66000000</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorBack">#303030</color>
+    <color name="colorCardBack">#424242</color>
+    <color name="colorDrawableTint">@null</color>
+    <color name="highlight">#001ae5</color>
+    <color name="colorBlur">#ffffff</color>
+</resources>
