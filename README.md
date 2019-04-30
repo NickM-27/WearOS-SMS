@@ -21,9 +21,9 @@ As apart of open sourcing this app, I have removed the pay walls for all feature
 However, if you would like to contribute to development / support the cause of this app, you can [paypal me here](https://paypal.me/nickmowen). Thank you, I really appreciate it!
 
 ## Downloads
-[Download For The Phone App](./app/release/app.apk)
+[Download For The Phone App](./app/release/app-release.apk)
 
-[Download For The Watch App](./app/release/wear.apk)
+[Download For The Watch App](./app/release/wear-release.apk)
 
 # Developed By
 Nick Mowen - <nick@nicknackdevelopment.com>
