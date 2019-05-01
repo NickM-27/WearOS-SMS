@@ -27,16 +27,8 @@ class SettingsFragment : PreferenceFragmentCompat(), Preference.OnPreferenceClic
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.preferences_main)
-
-        if (!PreferenceManager.getDefaultSharedPreferences(activity).getBoolean("premium", false)) {
-            findPreference("primaryColor").isEnabled = false
-            findPreference("conversationCount").isEnabled = false
-            findPreference("avatar").isEnabled = false
-            findPreference("notify").isEnabled = false
-        } else {
-            findPreference("primaryColor").onPreferenceClickListener = this
-            findPreference("avatar").onPreferenceClickListener = this
-        }
+        findPreference("primaryColor").onPreferenceClickListener = this
+        findPreference("avatar").onPreferenceClickListener = this
     }
 
     override fun onResume() {
@@ -72,18 +64,18 @@ class SettingsFragment : PreferenceFragmentCompat(), Preference.OnPreferenceClic
         return when (preference?.key) {
             "avatar" -> {
                 AlertDialog.Builder(activity)
-                        .setTitle(getString(R.string.title_option_avatar))
-                        .setPositiveButton(getString(R.string.action_select)) { dialog, _ ->
-                            if (requireActivity().checkStoragePermission())
-                                requireActivity().getImage(Constants.REQ_CODE_IMAGE_SELECT)
-                            else
-                                requireActivity().getStoragePermission()
+                    .setTitle(getString(R.string.title_option_avatar))
+                    .setPositiveButton(getString(R.string.action_select)) { dialog, _ ->
+                        if (requireActivity().checkStoragePermission())
+                            requireActivity().getImage(Constants.REQ_CODE_IMAGE_SELECT)
+                        else
+                            requireActivity().getStoragePermission()
 
-                            dialog.dismiss()
-                        }.setNegativeButton(getString(R.string.action_undo)) { dialog, _ ->
-                            PreferenceManager.getDefaultSharedPreferences(activity).edit { putString("avatar", "") }
-                            dialog.dismiss()
-                        }.show()
+                        dialog.dismiss()
+                    }.setNegativeButton(getString(R.string.action_undo)) { dialog, _ ->
+                        PreferenceManager.getDefaultSharedPreferences(activity).edit { putString("avatar", "") }
+                        dialog.dismiss()
+                    }.show()
                 edited = true
                 true
             }

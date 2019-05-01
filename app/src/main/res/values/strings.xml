@@ -43,7 +43,7 @@
     <string name="warning_no_messages">The app cannot function without these permissions</string>
     <string name="explanation_premium">The WearOS SMS app is free, but to truly take advantage of it and do things like send messages, create replies, or theme the app, premium mode must be purchased.</string>
     <string name="action_purchase_premium">Purchase Premium</string>
-    <string name="explanation_premium_bought">Thank you for purchasing premium! More features are on the way so your purchase will only become more valuable! Hope you enjoy the app and let me know if you have any issues!</string>
+    <string name="explanation_premium_bought">Hi, thank you for checking out WearOS SMS on GitHub! I hope you enjoy the app and let me know if you have any issues or feature requests!</string>
     <string name="option_theme_summary">Local app theme to make the app more comfortable to use.</string>
     <string name="option_app_color_summary">Global theme color that applies to the WearOS app as well.</string>
     <string name="action_settings">Settings</string>
