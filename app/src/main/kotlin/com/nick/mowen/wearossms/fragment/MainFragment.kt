@@ -22,14 +22,13 @@ class MainFragment : AbstractFragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.premiumExplanation.text = getString(R.string.explanation_premium_bought)
         binding.premiumButton.text = getString(R.string.action_contact_developer)
-    }
-
-    private fun premium() {
-        startActivity(Intent(Intent.ACTION_SEND).apply {
-            type = "message/rfc822"
-            putExtra(Intent.EXTRA_EMAIL, arrayOf("nick@nicknackdevelopment.com"))
-            putExtra(Intent.EXTRA_SUBJECT, "WearOS SMS Feedback")
-            putExtra(Intent.EXTRA_TEXT, "I just wanted to tell you...")
-        })
+        binding.premiumButton.setOnClickListener {
+            startActivity(Intent(Intent.ACTION_SEND).apply {
+                type = "message/rfc822"
+                putExtra(Intent.EXTRA_EMAIL, arrayOf("nick@nicknackdevelopment.com"))
+                putExtra(Intent.EXTRA_SUBJECT, "WearOS SMS Feedback")
+                putExtra(Intent.EXTRA_TEXT, "I just wanted to tell you...")
+            })
+        }
     }
 }
