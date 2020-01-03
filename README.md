@@ -20,6 +20,8 @@ As apart of open sourcing this app, I have removed the pay walls for all feature
 
 However, if you would like to contribute to development / support the cause of this app, you can [paypal me here](https://paypal.me/nickmowen). Thank you, I really appreciate it!
 
+<a href="https://www.buymeacoffee.com/jTsYwF4mR" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
 ## Downloads
 [Download For The Phone App](./app/release/app-release.apk)
 
